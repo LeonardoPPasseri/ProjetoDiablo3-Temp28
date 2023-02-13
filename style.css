@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth; /*Deixa a rolagem automatica SUAVE*/
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*padding é a margem dentro da box(conteudo)*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%; /* imagem fica em 100% da tela*/
+    background-attachment: fixed;
+    color: hsl(0, 0%, 100%);
+}
+
+#cabecalho{
+    
+    background-color: #28444eb9;
+    display: flex;
+    justify-content: space-between; /* Separa os itens */
+    padding: 5px;
+    width:98%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0%;
+
+
+   background-color: #28444e,#1d3b46,#152025
+}
+
+img#logo{
+    width: 100px;
+    height: 50px;
+    
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#cabecalho nav li a {
+
+    padding: 10px 20px;
+    color:#ffffff ;
+    font-weight:bolder;
+    text-decoration: none; /* Tira o sublinhado */
+    border-radius: 50px;
+    /* Arredondamento das bordas */
+    transition: 0.2s;
+    /* tempo que leva pra cor mudar no "home detalhes" */
+ 
+}
+
+#cabecalho nav li a:hover{
+    background-color: aquamarine;
+}
+
+
+
+
+main{
+    
+    background-color: rgba(21, 32, 37, 0.877);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+    
+   
+}
+
+div{
+    padding: 40px;
+}
+
+h1{
+    padding-bottom: 30px;
+    text-shadow: 3px 3px 3px black;
+}
+h2{
+    padding: 30px;
+    font-size: 18px;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+img#fotosets{
+    height: 300px;
+    width: 600px;
+}
+
+p#dif{
+    font-size: 18px;
+
+}
+
+ul#setlist{
+    
+    text-align: justify;
+}
+
+
