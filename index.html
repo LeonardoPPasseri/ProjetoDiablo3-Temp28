@@ -3,11 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/d3_1.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Diablo 3</title>
-
+    
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <nav>
             <ul style="list-style: none;" id="menu">
                 <li><a href="#temporada28">INICIO</a></li>
-                <!-- <li><a href="#">NOVIDADES</a></li> -->
+                <li><a href="#divsets">BUILDS</a></li>
                 <li><a href="#Bonusdetemp">BÔNUS DE TEMPORADA</a></li>
                 <!-- Adicione o id ao href para a rolagem automatica-->
                 <li><a href="#leveling">LEVELING</a></li>
@@ -53,21 +54,70 @@
                 mesmo personagem.
             </p>
 
-            <h2>Sets da Temporada</h2>
 
-            <p>
+
+            <div id="divsets">
+                <h2>Sets da Temporada e link para o Maxroll</h2>
                 <img id="fotosets" src="./img/SettsTemporada.jpg" alt="setsdatemp">
                 <ul id="setlist">
-                    <li>Bárbaro - Horda dos Noventa Selvagens</li>
-                    <li>Cruzado - Égide da Bravura</li>
-                    <li>Caçador de Demônios - Terras do Pavor</li>
-                    <li>Monge - Preceitos da Justiça</li>
-                    <li>Feiticeiro - Vestimentos de Mundunugu</li>
-                    <li>Arcanista - O Véu de Tifão</li>
-                    <li>Necromante - Máscara do Carnaval Ardente</li>
+                    <li><a href="#">Bárbaro - Horda dos Noventa Selvagens</a></li>
+                    <li><a href="#">Cruzado - Égide da Bravura</a></li>
+                    <li><a href="#">Caçador de Demônios - Terras do Pavor</a></li>
+                    <li><a href="#">Monge - Preceitos da Justiça</a></li>
+                    <li><a href="#">Feiticeiro - Vestimentos de Mundunugu</a></li>
+                    <li><a href="#">Arcanista - O Véu de Tifão</a></li>
+                    <li><a href="#">Necromante - Máscara do Carnaval Ardente</a></li>
                 </ul>
-            </p>
+            </div>
+            <h2>Builds</h2>
+            <div id="builds">
 
+                <div id="monge">
+                    <h3>MONGE</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Inna</li>
+                        </a>
+                        <a href="">
+                            <li>Mil Tempestades</li>
+                        </a>
+                    </ul>
+                </div>
+                <div id="dh">
+                    <h3>DH</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Inna</li>
+                        </a>
+                        <a href="">
+                            <li>Mil Tempestades</li>
+                        </a>
+                    </ul>
+                </div>
+                <div id="barbaro">
+                    <h3>BARBARO</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Inna</li>
+                        </a>
+                        <a href="">
+                            <li>Mil Tempestades</li>
+                        </a>
+                    </ul>
+                </div>
+                <div id="necro">
+                    <h3>NECRO</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Inna</li>
+                        </a>
+                        <a href="">
+                            <li>Mil Tempestades</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <p><a style="color:white;" href="https://maxroll.gg/d3/" target="_blank" rel="external">https://maxroll.gg/diabloIII</a></p>
         </div>
         <hr>
         <div id="Bonusdetemp">
@@ -75,12 +125,13 @@
             <img src="./img/altaresdesacrificio.jpg" width="600px" height="300px" alt="altaresdesacrificio.jpg">
             <ul style="list-style: none;">
                 <li>Para a temporada 28, Rites of Sanctuary, estamos viajando profundamente nas misteriosas ruínas de
-                    Festering Woods. Em meio a uma expedição de caça, cidadãos vindos de New Tristram tropeçaram em um
+                    Festering Woods. Em meio a uma expedição de caça, cidadãos vindos de Nova Tristram tropeçaram em um
                     sinistro Altar esculpido em um material arcaico com marcas enigmáticas. Abalados profundamente pelo
                     aroma sobrenatural do monólito, eles recrutaram a ajuda do bravo Nephalem disposto a investigar esta
                     descoberta sinistra que já foi deixada para o tempo -<strong> o Altar dos Sacrificios</strong> </li>
-                <li>Link para montar seus bônus <a href="https://caleko.github.io/s28planner/" target="_blank"
-                        rel="external">Clique Aqui</a></li>
+                    <br>
+                <li>Link para montar seus bônus <a style="color:aquamarine;font-size: 20px;" href="https://caleko.github.io/s28planner/" target="_blank"
+                        rel="external">https://caleko.github.io/s28planner</a></li>
             </ul>
         </div>
         <hr>
@@ -90,8 +141,9 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <p><a href="./leveling.html" target="_blank" rel="external">Leveling</a></p>
+           
         </div>
+        <p id="linkleveling" ><a href="./paginas-secundarias/leveling.html" target="_blank" rel="external"><img src="./img/Arquivo-Seta-Azul-direita-png.png" alt="foto-seta"> Leveling <img src="./img/Arquivo-Seta-Azul-direita-png.png" alt="foto-seta"> </a> </p>
     </main>
 
 
