@@ -18,6 +18,7 @@ body {
     /* imagem fica em 100% da tela*/
     background-attachment: fixed;
     color: hsl(0, 0%, 100%);
+    
 }
 
 #cabecalho {
@@ -27,7 +28,7 @@ body {
     justify-content: space-between;
     /* Separa os itens */
     padding: 5px;
-    width: 98%;
+    width: 99%;
     margin: 0 auto;
     position: fixed;
     top: 0%;
@@ -36,13 +37,13 @@ body {
     background-color: #28444e, #1d3b46, #152025
 }
 
-img#logo {
+img.logo {
     width: 100px;
     height: 50px;
 
 }
 
-#menu {
+.menu {
     display: flex;
     align-items: center;
     height: 100%;
@@ -109,21 +110,33 @@ p {
     font-weight: lighter;
 }
 
-img#fotosets {
+.hover:hover{
+    background-color: rgb(8, 20, 26);
+    box-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 3px;
+    transition: 0.2s;
+
+}
+
+/* ================ */
+/* ================ */
+
+.fotosets {
     height: 300px;
     width: 600px;
 }
 
-p#dif {
+.dif {
     font-size: 18px;
 
 }
 
-ul#setlist {
+ul.setlist {
     text-align: justify;
 }
 
-ul#setlist li a {
+ul.setlist li a {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
@@ -132,7 +145,7 @@ ul#setlist li a {
     transition: 0.2s;
 }
 
-ul#setlist li a:hover {
+ul.setlist li a:hover {
     background-color: rgb(8, 20, 26);
 
 }
@@ -140,19 +153,19 @@ ul#setlist li a:hover {
 /* ================ */
 /*  DIV das builds  */
 
-div#builds {
+#builds {
     display: flex;
     align-items: center;
 }
 
-div#monge {
+.monge {
     background-color: hsl(196, 18%, 30%, 0.781);
     width: 200px;
     height: 200px;
     text-align: left;
 }
 
-div#monge ul li {
+.monge ul li {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
@@ -161,13 +174,13 @@ div#monge ul li {
     transition: 0.2s;
 }
 
-div#dh {
+.dh {
     background-color: hsl(196, 32%, 23%, 0.781);
     width: 200px;
     height: 200px;
     text-align: left;
 }
-div#dh ul li {
+.dh ul li {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
@@ -176,13 +189,13 @@ div#dh ul li {
     transition: 0.2s;
 }
 
-div#barbaro {
+.barbaro {
     background-color: hsla(196, 41%, 19%, 0.781);
     width: 200px;
     height: 200px;
     text-align: left;
 }
-div#barbaro ul li {
+.barbaro ul li {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
@@ -191,13 +204,13 @@ div#barbaro ul li {
     transition: 0.2s;
 }
 
-div#necro {
+.necro {
     background-color: hsla(199, 28%, 11%, 0.781);
     width: 200px;
     height: 200px;
     text-align: left;
 }
-div#necro ul li {
+.necro ul li {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
@@ -206,7 +219,7 @@ div#necro ul li {
     transition: 0.2s;
 }
 
-div#builds ul li:hover {
+#builds ul li:hover {
     background-color: rgb(8, 20, 26);
 
 }
@@ -214,18 +227,18 @@ div#builds ul li:hover {
 /* ============== */
 /* Div Leveling */
 
-p#linkleveling{
+.linkleveling{
     text-align: right;
     align-items: center;
     padding:20px;
 }
 
-p#linkleveling img{
+.linkleveling img{
     width: 20px;
     height: 20px;
 }
 
-p#linkleveling a {
+.linkleveling a {
     color:aquamarine;
     font-size: 30px;
 }
