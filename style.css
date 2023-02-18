@@ -18,6 +18,7 @@ body {
     /* imagem fica em 100% da tela*/
     background-attachment: fixed;
     color: hsl(0, 0%, 100%);
+    background-color:rgba(21, 32, 37, 0.877) ;
     
 }
 
@@ -50,7 +51,9 @@ img.logo {
 }
 
 #cabecalho nav li a {
-
+    
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Times New Roman', Times, serif;
     padding: 10px 20px;
     color: #ffffff;
     font-weight: bolder;
@@ -63,7 +66,7 @@ img.logo {
 }
 
 #cabecalho nav li a:hover {
-    background-color: aquamarine;
+    background-color: rgb(90, 179, 149);
 }
 
 
@@ -110,6 +113,11 @@ p {
     font-weight: lighter;
 }
 
+span{
+    font-weight: bold;
+    color: gold;
+}
+
 .hover:hover{
     background-color: rgb(8, 20, 26);
     box-shadow: 2px 2px 3px black;
@@ -120,7 +128,7 @@ p {
 }
 
 /* ================ */
-/* ================ */
+/*     Setlist     */
 
 .fotosets {
     height: 300px;
@@ -135,12 +143,15 @@ p {
 ul.setlist {
     text-align: justify;
 }
+.setlist li {
+    padding: 5px;
+}
 
 ul.setlist li a {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
-    padding: 4px;
+    padding: 6px;
     justify-content: space-around;
     transition: 0.2s;
 }
@@ -156,11 +167,12 @@ ul.setlist li a:hover {
 #builds {
     display: flex;
     align-items: center;
+
 }
 
 .monge {
     background-color: hsl(196, 18%, 30%, 0.781);
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     text-align: left;
 }
@@ -176,7 +188,7 @@ ul.setlist li a:hover {
 
 .dh {
     background-color: hsl(196, 32%, 23%, 0.781);
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     text-align: left;
 }
@@ -191,7 +203,7 @@ ul.setlist li a:hover {
 
 .barbaro {
     background-color: hsla(196, 41%, 19%, 0.781);
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     text-align: left;
 }
@@ -206,14 +218,16 @@ ul.setlist li a:hover {
 
 .necro {
     background-color: hsla(199, 28%, 11%, 0.781);
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     text-align: left;
+    
 }
 .necro ul li {
     color: white;
     text-shadow: 6px 6px 6px #000000;
     border-radius: 10px;
+   
     padding: 4px;
     justify-content: space-around;
     transition: 0.2s;
@@ -223,6 +237,27 @@ ul.setlist li a:hover {
     background-color: rgb(8, 20, 26);
 
 }
+
+.conquistas{
+    padding: 5px;
+    text-align: left;
+}
+
+/* ============== */
+/* Div recompesas */
+
+.img-recomp{
+    width: 800px;
+    height: 400px;
+}
+.img-recomp-gif{
+    width: 400px;
+    height: 200px;
+}
+.img-rec-t16{
+    padding-top: 10px;
+}
+
 
 /* ============== */
 /* Div Leveling */
@@ -241,4 +276,23 @@ ul.setlist li a:hover {
 .linkleveling a {
     color:aquamarine;
     font-size: 30px;
+}
+
+
+/* ============= */
+/* Atualização de builds */
+
+.att-builds li{
+    color: #ffffff;
+    padding: 5px;
+    text-align: start;
+}
+.att-builds li a{
+    color: aquamarine;
+    
+}
+.att-builds li a:hover{
+    border-radius: 15px;
+    padding: 2px;
+    background-color:rgb(8, 20, 26);
 }
