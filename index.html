@@ -3,11 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="./img/d3_1.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Diablo 3</title>
-
 </head>
 
 <body>
@@ -15,13 +16,13 @@
 
     <header id="cabecalho">
         <a href="https://us.diablo3.blizzard.com/pt-br/" target="_blank" rel="external">
-            <img id="logo" src="./img/Logo-blizzard-473px.png" alt="Logo-blizzard">
+            <img class="logo" src="./img/Logo-blizzard-473px.png" alt="Logo-blizzard">
         </a>
 
         <nav>
-            <ul style="list-style: none;" id="menu">
+            <ul style="list-style: none;" class="menu">
                 <li><a href="#temporada28">INICIO</a></li>
-                <!-- <li><a href="#">NOVIDADES</a></li> -->
+                <li><a href="#divsets">BUILDS</a></li>
                 <li><a href="#Bonusdetemp">BÔNUS DE TEMPORADA</a></li>
                 <!-- Adicione o id ao href para a rolagem automatica-->
                 <li><a href="#leveling">LEVELING</a></li>
@@ -32,9 +33,9 @@
     <main>
         <div id="temporada28">
             <h1>Temporada 28: Rites of Sanctuary</h1>
-            <img src="./img/Temporda 28.png" width="600px" height="200px" alt="temporada28.png">
+            <img class="ft-temp28 responsive" src="./img/ft-temp28.png" alt="temporada28.png">
             <h2>INÍCIO</h2>
-            <p id="dif">
+            <p class="dif">
                 Os Conjuntos de Classe disponíveis para completar certos capítulos na Jornada da Temporada, cortesia do
                 Presente de Haedrig, mudaram mais uma vez. Listamos os conjuntos disponíveis abaixo. Para quem é novo na
                 Seasons, veja como funciona:
@@ -53,49 +54,162 @@
                 mesmo personagem.
             </p>
 
-            <h2>Sets da Temporada</h2>
 
-            <p>
-                <img id="fotosets" src="./img/SettsTemporada.jpg" alt="setsdatemp">
-                <ul id="setlist">
-                    <li>Bárbaro - Horda dos Noventa Selvagens</li>
-                    <li>Cruzado - Égide da Bravura</li>
-                    <li>Caçador de Demônios - Terras do Pavor</li>
-                    <li>Monge - Preceitos da Justiça</li>
-                    <li>Feiticeiro - Vestimentos de Mundunugu</li>
-                    <li>Arcanista - O Véu de Tifão</li>
-                    <li>Necromante - Máscara do Carnaval Ardente</li>
+
+            <div id="divsets">
+                <h2>Sets da Temporada e link para o Maxroll</h2>
+                <img class="fotosets responsive" src="./img/SettsTemporada.jpg" alt="setsdatemp">
+                <ul class="setlist">
+
+                    <li><a href="https://maxroll.gg/d3/guides/patterns-of-justice-tempest-rush-monk-guide" target="_blank">Monge - Preceitos da Justiça</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/god-ha-demon-hunter-guide" target="_blank">Caçador de
+                            Demônios - Terras do Pavor</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/savage-frenzy-barbarian-guide" target="_blank">Bárbaro -
+                            Horda dos Noventa Selvagens</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/typhon-hydra-wizard-guide" target="_blank">Arcanista - O
+                            Véu de Tifão</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/aov-fist-of-the-heavens-crusader-guide" target="_blank">Cruzado - Égide da Bravura</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/mundunugu-spirit-barrage-witch-doctor-guide"
+                            target="_blank">Feiticeiro - Vestimentos de Mundunugu</a></li>
+
+                    <li><a href="https://maxroll.gg/d3/guides/masquerade-bone-spear-necromancer-guide"
+                            target="_blank">Necromante - Máscara do Carnaval Ardente</a></li>
+                            
                 </ul>
-            </p>
+            </div>
+            <h2>Builds</h2>
+            <div id="builds">
+
+                <div class="monge">
+                    <h3>MONGE</h3>
+                    <ul>
+                        <a href="https://maxroll.gg/d3/guides/inna-mystic-ally-monk-guide" target="_blank">
+                            <li>Inna</li>
+                        </a>
+                        <a href="https://maxroll.gg/d3/guides/support-zmonk-guide" target="_blank">
+                            <li>Zmonk</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="dh">
+                    <h3>DH</h3>
+                    <ul>
+                        <a href="https://maxroll.gg/d3/guides/ue-multishot-demon-hunter-guide" target="_blank">
+                            <li>EssênciaProfana</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="barbaro">
+                    <h3>BARBARO</h3>
+                    <ul>
+                        <a href="https://maxroll.gg/d3/guides/waste-set-ww-rend-barbarian-guide" target="_blank">
+                            <li>Retalhamento</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="necro">
+                    <h3>NECRO</h3>
+                    <ul>
+                        <a href="https://maxroll.gg/d3/guides/tragoul-death-nova-necromancer-guide" target="_blank">
+                            <li>Tragoul DeathNova</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <p><a class="hover" style="color:aquamarine;" href="https://maxroll.gg/d3/category/guides" target="_blank"
+                    rel="external">https://maxroll.gg/d3/category/guides</a></p>
+
+            <h2>Conquista sazonal</h2>
+
+            <ul class="conquistas">
+                <li><span>Complete uma fenda Nephalem no Suplício X em 2 minutos.</span></li>
+                <li><span>Três Gemas Lendárias no nível 65.</span></li>
+                <li><span>Mate os chefes no Suplício X dentro de 20 minutos após o início do jogo.</span></li>
+                <li>Mate 350 ou mais monstros em um evento baú amaldiçoado na dificuldade Torment X.</li>
+                <li>Alcançar a Fenda Maior de nível 55 jogando solo com os bônus de seis partes de algumas builds.</li>
+            </ul>
+
+            <h2>Atualização de builds</h2>
+
+            <ul class="att-builds">
+                <li>Demon Hunter: <a href="./img/spiketrap.png" target="_blank">SpikeTraps</a></li>
+                <li>Demon Hunter: <a href="./img/Terras do pavor.png" target="_blank">TerrasdoPavor</a></li>
+                <li>Demon Hunter: <a href="./img/essencia profana.png" target="_blank">EssênciaProfana</a></li>
+                <li>Monge: <a href="./img/monge.png" target="_blank">AtributosPrincipais</a></li>
+                <li>Monge: <a href="./img/monge-builds.png" target="_blank">Preceitos/Miltempestades</a></li>
+                <li>Feiticeiro: <a href="./img/feiticeiro.png" target="_blank">Salva de Espíritos</a></li>
+                <li>Arcanista: <a href="./img/arcanista.png" target="_blank">Hidras</a></li>
+                <li>Necromancer: <a href="./img/necro.png" target="_blank">CarnavalArdente</a></li>
+
+
+            </ul>
 
         </div>
         <hr>
         <div id="Bonusdetemp">
-            <h1>Altares de sacrificio</h1>
-            <img src="./img/altaresdesacrificio.jpg" width="600px" height="300px" alt="altaresdesacrificio.jpg">
+            <h1>Altar dos Sacrifícios</h1>
+            <img class="fotosets responsive" src="./img/altaresdesacrificio.jpg" alt="altaresdesacrificio.jpg">
             <ul style="list-style: none;">
-                <li>Para a temporada 28, Rites of Sanctuary, estamos viajando profundamente nas misteriosas ruínas de
-                    Festering Woods. Em meio a uma expedição de caça, cidadãos vindos de New Tristram tropeçaram em um
-                    sinistro Altar esculpido em um material arcaico com marcas enigmáticas. Abalados profundamente pelo
-                    aroma sobrenatural do monólito, eles recrutaram a ajuda do bravo Nephalem disposto a investigar esta
-                    descoberta sinistra que já foi deixada para o tempo -<strong> o Altar dos Sacrificios</strong> </li>
-                <li>Link para montar seus bônus <a href="https://caleko.github.io/s28planner/" target="_blank"
-                        rel="external">Clique Aqui</a></li>
+                <br>
+                <li>Para a Temporada 28, Ritos de Santuário, vamos mergulhar nas profundezas das misteriosas ruínas da
+                    Mata Infecta. Em meio a uma expedição de mineração, cidadãos de Nova Tristram encontraram um Altar
+                    sinistro esculpido em um material arcaico e marcado com símbolos misteriosos. Profundamente abalados
+                    pelo cheiro sobrenatural do monólito, eles recrutaram a ajuda de bravos nefalem dispostos a
+                    investigar essa sinistra descoberta, até então esquecida:<strong> o Altar dos Ritos.</strong> </li>
+                <br>
+                <li>Link para montar seus bônus <a class="hover" style="color:aquamarine;font-size: 20px;"
+                        href="https://caleko.github.io/s28planner/" target="_blank"
+                        rel="external">https://caleko.github.io/s28planner</a></li>
+                <br>
+                <p>Build recomendada (1-12): <a class="hover" style="color:aquamarine;"
+                        href="https://caleko.github.io/s28planner/index.html?s=gQEAAgAAAwAEAAUAAAAABgAACwcJAAwACAAKAAAAAA%3D%3D">https://caleko.github.io/s28planner/index.html</a>
+                </p>
+
             </ul>
+
+        </div>
+        <hr>
+        <div id="recompensas">
+            <h1>Recompesas da Temporada</h1>
+            <div>
+                <img class="img-recomp responsive negative" src="./img/ft-ganhos.png" alt="ft-ganhos.png">
+                <h2>Moldura e Mascote</h2>
+                <img class="img-recomp responsive" src="./img/mascote.png" alt="mascote.png">
+                <h2>Wings of Terror</h2>
+                <img class="img-recomp-gif" src="./img/rec.gif" alt="rec.gif">
+                <p><span>OBS</span>: Desbloquear os 26 selos</p>
+                <br>
+                <img class="img-rec-t16" src="./img/rec-t16.png" alt="rec-t16">
+                <p><span>NOTA</span>: Recompensa da temporada 16</p>
+            </div>
         </div>
         <hr>
         <div id="leveling">
             <h1>Leveling 1 - 70</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/72OAj7kBTk8"
+            <iframe width="600" height="300" src="https://www.youtube.com/embed/72OAj7kBTk8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <p><a href="./leveling.html" target="_blank" rel="external">Leveling</a></p>
+
         </div>
+        <p class="linkleveling"><a class="hover" href="./paginas-secundarias/leveling.html" target="_blank"
+                rel="external"><img src="./img/Arquivo-Seta-Azul-direita-png.png" alt="foto-seta"> Leveling <img
+                    src="./img/Arquivo-Seta-Azul-direita-png.png" alt="foto-seta"> </a> </p>
+
+
+
     </main>
-
-
 
 </body>
 
 </html>
+
+<!-- Para celular 300x300px -->
+<!-- Para tablet 700x700px -->
+<!-- Para computador 1000x1000px -->
