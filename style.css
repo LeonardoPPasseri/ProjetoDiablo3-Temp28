@@ -48,6 +48,7 @@ img.logo {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 #cabecalho nav li a {
@@ -83,6 +84,11 @@ main {
 
 
 }
+.ft-temp28{
+    width:900px;
+    height:300px;
+    width: 100%;
+}
 
 div {
     padding: 40px;
@@ -111,6 +117,7 @@ h3 {
 p {
     font-size: 17px;
     font-weight: lighter;
+    line-height: 2rem;
 }
 
 span{
@@ -131,8 +138,9 @@ span{
 /*     Setlist     */
 
 .fotosets {
-    height: 300px;
-    width: 600px;
+    max-height: 400px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .dif {
@@ -142,6 +150,7 @@ span{
 
 ul.setlist {
     text-align: justify;
+    list-style-position: inside
 }
 .setlist li {
     padding: 5px;
@@ -167,7 +176,7 @@ ul.setlist li a:hover {
 #builds {
     display: flex;
     align-items: center;
-
+    width: 100%;
 }
 
 .monge {
@@ -175,6 +184,7 @@ ul.setlist li a:hover {
     max-width: 200px;
     height: 200px;
     text-align: left;
+    width: 100%;
 }
 
 .monge ul li {
@@ -191,6 +201,7 @@ ul.setlist li a:hover {
     max-width: 200px;
     height: 200px;
     text-align: left;
+    width: 100%;
 }
 .dh ul li {
     color: white;
@@ -206,6 +217,7 @@ ul.setlist li a:hover {
     max-width: 200px;
     height: 200px;
     text-align: left;
+    width: 100%;
 }
 .barbaro ul li {
     color: white;
@@ -221,6 +233,7 @@ ul.setlist li a:hover {
     max-width: 200px;
     height: 200px;
     text-align: left;
+    width: 100%;
     
 }
 .necro ul li {
@@ -249,13 +262,18 @@ ul.setlist li a:hover {
 .img-recomp{
     width: 800px;
     height: 400px;
+    width: 100%;
 }
 .img-recomp-gif{
     width: 400px;
     height: 200px;
+    width: 50%;
 }
 .img-rec-t16{
     padding-top: 10px;
+    max-width: 500px;
+    
+    width: 100%;
 }
 
 
